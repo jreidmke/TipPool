@@ -1,0 +1,11 @@
+beforeEach. set values equal to 20, 5, Maria. 
+
+checkVal - set all inputs = to blank and make sure it returns false
+set all values equal to something and make sure it returns true
+
+check server- attempt to add a second maria to serverObj. server Obj length should return 1. 
+try to add new server. server obj length should return 2.
+
+store names - nameArr.length = 1; blank values nameArr.length = 0. 
+
+tip percent- set tip obj = to some values and make sure it checks out. 

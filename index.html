@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet"
+  href="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Tip Calculator</h1>
+          <p class="lead">This is where you will write your text. I'm thinking add new functionality that allows % of tip to go to meal server before being split amongst remaining servers. </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- MEAL FORM AND TABLE -->
+        <div class="row">
+            <div class="col">
+                <!-- Meal form -->
+                <form class="col-10">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="mealCost" placeholder="Enter Meal Cost">
+                    </div>
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="tipAmt" placeholder="Enter Tip Amount">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="serverName" placeholder="Enter Server Name">
+                    </div>
+                    <button class="btn btn-outline-info btn-block mb-5" id="mealBtn"><strong>submit meal</strton></button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- Meal Table -->
+                <table class="table table-striped table-light" id="mealTable">
+                    <h4>Meal Table</h4>
+                    <thead>
+                        <th>Meal Cost</th>
+                        <th>Tip Amount</th>
+                        <th>Server</th>
+                        <th>Tip Percentage</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-6">
+                <table class="table table-striped table-light">
+                    <h4>Server Table</h4>
+                    <thead>
+                        <th>Server Name</th>
+                        <th>Meals Served</th>
+                        <th>Money Earned</th>
+                        <th></th>
+                    </thead>
+                    <tbody  id="serverTable">
+                    </tbody>
+                </table>
+            </div>
+                <!-- end of meal div -->
+            </div>
+        </div>
+        <!-- Row end -->
+        </div>
+        <!-- end of container -->
+    </div>
+
+    <!-- JS SCR -->
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+    <script src="https://unpkg.com/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+    <script src= "https://unpkg.com/jasmine-core/lib/jasmine-core/boot.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="app.test.js"></script>
+</body>
+</html>
